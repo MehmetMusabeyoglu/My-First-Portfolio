@@ -1,7 +1,7 @@
 # My-First-Portfolio
 
 ## Summary
-In this project, I created my first portfolio webpage. I added links which are directly go to the my projects websites. Also I added my contact informations and their links too.  
+In this project, I created my first portfolio webpage. I added links which directly go to my project websites. Also I added my contact information with links to corresponding contact channels. I used advanced CSS for styling and used flex properties, such that the items within website are adjusted when the webpage is resized.   
 
 ## Technologies Used
 <ul>
