@@ -1,20 +1,20 @@
-*{
+* {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     box-sizing: border-box;
     font-size: 16px;
 }
 
-body{
+body {
     background-color: wheat;
     display: flex;
     flex-direction: column;
 }
 
-header{
+header {
     background-color: salmon;
 }
 
-header h1{
+header h1 {
     font-size: 175%;
     display: flex;
     justify-content: flex-start;
@@ -22,7 +22,7 @@ header h1{
     padding-top: 20px;
 }
 
-nav ul{
+nav ul {
     font-size: 150%;
     display: flex;
     justify-content: flex-end;
@@ -30,21 +30,22 @@ nav ul{
     padding-bottom: 10px;
 }
 
-.container{
+.container {
+    margin-top: 15px;
     display: flex;
     height: 100%;
 }
 
-.row{
+.row {
     flex: auto;
 }
 
-.container p{
+.container p {
     margin-left: 50px;
     margin-top: 50px;
 }
 
-#about-me h2{
+#about-me h2 {
     font-size: 200%;
     display: flex;
     justify-content: flex-start;
@@ -52,7 +53,7 @@ nav ul{
     height: 100%;
 }
 
-#work h2{
+#work h2 {
     font-size: 200%;
     display: flex;
     justify-content: flex-start;
@@ -70,13 +71,14 @@ nav ul{
     min-height: 400px;
     flex-basis: 100%;
     height: max-content;
-    width:max-content
+    width: max-content
 }
 
-.work-item:hover{
+.work-item:hover {
     background-color: wheat;
     transition: all 2s ease-in-out;
 }
+
 .work-item {
     border: 5px dashed salmon;
     background-color: salmon;
@@ -85,6 +87,13 @@ nav ul{
     display: flex;
     align-items: flex-end;
     margin: 10px;
+    width: 40%;
+}
+
+.background {
+    border: 2px solid wheat;
+    background-color: wheat;
+    position: absolute;
 }
 
 img {
@@ -97,22 +106,22 @@ img {
     }
 }
 
-#contact h2{
+#contact h2 {
     font-size: 200%;
     display: flex;
     justify-content: flex-start;
     padding-top: 100px;
 }
 
-#contact ul{
+#contact ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
-    padding-left: 100px ;
+    padding-left: 100px;
 }
 
-footer{
+footer {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
