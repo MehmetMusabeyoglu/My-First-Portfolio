@@ -1,15 +1,18 @@
+/* Universal properties applying to all CSS style sheets*/
 * {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     box-sizing: border-box;
     font-size: 16px;
 }
 
+/* Properties applying to body section */
 body {
     background-color: wheat;
     display: flex;
     flex-direction: column;
 }
 
+/* Properties applying to header sections */
 header {
     background-color: salmon;
 }
@@ -30,14 +33,11 @@ nav ul {
     padding-bottom: 10px;
 }
 
+/* Properties applying to main's container class */
 .container {
     margin-top: 15px;
     display: flex;
     height: 100%;
-}
-
-.row {
-    flex: auto;
 }
 
 .container p {
@@ -45,6 +45,12 @@ nav ul {
     margin-top: 50px;
 }
 
+/* Properties applying to main's container class */
+.row {
+    flex: auto;
+}
+
+/* Properties applying to h2 header within about me section */
 #about-me h2 {
     font-size: 200%;
     display: flex;
@@ -53,6 +59,7 @@ nav ul {
     height: 100%;
 }
 
+/* Properties applying to h2 header within work section */
 #work h2 {
     font-size: 200%;
     display: flex;
@@ -60,6 +67,7 @@ nav ul {
     padding-top: 100px;
 }
 
+/* Properties applying to work-container class*/
 .work-container {
     display: flex;
     flex-wrap: wrap;
@@ -67,6 +75,7 @@ nav ul {
     padding-left: 100px;
 }
 
+/* Properties applying to the first element within work-item class*/
 .work-item:first-child {
     min-height: 400px;
     flex-basis: 100%;
@@ -74,13 +83,15 @@ nav ul {
     width: max-content
 }
 
+/* Hovering properties applying to the whole work-item class*/
 .work-item:hover {
     background-color: wheat;
     transition: all 2s ease-in-out;
 }
 
+/* Properties applying to the whole work-item class*/
 .work-item {
-    border: 5px dashed salmon;
+    border: 2.5px dashed salmon;
     background-color: salmon;
     min-height: 150px;
     max-height: 150px;
@@ -90,22 +101,29 @@ nav ul {
     width: 40%;
 }
 
+/* Properties applying to the background class*/
 .background {
     border: 2px solid wheat;
     background-color: wheat;
     position: absolute;
 }
 
+.work-item img{
+    position: relative;
+}
+
 img {
     height: 150px;
 }
 
+/* This adds flex capability to the work container class, such that the items within the class adjusted when page is resized*/
 @media screen and (max-width: 962px) {
     .work-container {
         flex-direction: column;
     }
 }
 
+/* Properties applying to h2 header within contact section */
 #contact h2 {
     font-size: 200%;
     display: flex;
@@ -113,6 +131,7 @@ img {
     padding-top: 100px;
 }
 
+/* Properties applying to ul within contact section */
 #contact ul {
     display: flex;
     flex-wrap: wrap;
@@ -121,6 +140,7 @@ img {
     padding-left: 100px;
 }
 
+/* Properties applying to the footer of the website */
 footer {
     display: flex;
     flex-direction: column;
