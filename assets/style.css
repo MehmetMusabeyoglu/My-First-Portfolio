@@ -22,17 +22,31 @@ header h1 {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding-top: 20px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    justify-content: space-between;
 }
 
 nav ul {
-    font-size: 150%;
+    font-size: 12px;
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding-bottom: 10px;
 }
 
+nav ul li {
+    padding: 0px 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+nav ul li a:hover {
+    text-decoration: underline;
+}
 /* Properties applying to main's container class */
 .container {
     margin-top: 15px;
